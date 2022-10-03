@@ -4,23 +4,23 @@
 
         <form  onsubmit="saveToLocalStorage(event)">
 
-            <label>choose expenseamount</label>
+            <label> choose expenseamount</label>
 
             <input id='username' type="text" name="username"  required/>
 
-            <label> choose description</label>
+            <label>choose description</label>
 
             <input id='email' type="text" name="emailId"  required/>
 
-            <label>choose category</label>
+            <label> choose category</label>
 
             <input id='phonenumber' type="text" name="phonenumber" />
-            <select name="cars">
+            <select id="option">
                 <option value="food">food</option>
                 <option value="movie">movie</option>
                 <option value="hotel">hotel</option>
                 <option value="travelling">travelling</option>
-             </select>
+            </select>
 
             <button> Submit </button>
 
@@ -196,7 +196,7 @@
 
             function deleteUser(userId){
 
-                axios.delete(`https://crudcrud.com/api/fafebd441fef442981454d393e8db782/${userId}`)
+                axios.delete(`https://crudcrud.com/api/fafebd441fef442981454d393e8db782/expenseTracker1/${userId}`)
 
                 .then((response)=>{
 
